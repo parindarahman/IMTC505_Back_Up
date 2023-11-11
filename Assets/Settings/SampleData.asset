@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 064957ea01d60004facde86cef4bbefc, type: 3}
+  m_Name: SampleData
+  m_EditorClassIdentifier: 
+  identifier: SampleData
+  buildKey: b10936b52578156469ea4ba51032a93b
+  groupID: e25319db-1b58-4bd6-a776-86be5f7d0e58
+  boundingBoxWithHandlesPrefab: {fileID: 5671351296789090341, guid: 7b542306e34a62f4c9a822fcb19b7d99,
+    type: 3}
+  stateChanged: 0
+  placables:
+  - identifier: Lander
+    prefab: {fileID: 4785265767093943778, guid: 8b0c6f9ed38307a46aedbc8d3d4e15a8,
+      type: 3}
+  - identifier: Coyote correct
+    prefab: {fileID: 8819502215328710489, guid: 4f7cdcdcf39078a47a407ec99f73aac9,
+      type: 3}
+  - identifier: Grizzly bear
+    prefab: {fileID: 142578580016184757, guid: 92332613a3a44554c8cb231325afa7a0, type: 3}
+  - identifier: MuscialNote
+    prefab: {fileID: 3133548096772341771, guid: 547467a3a43e5d04ab6385ef903a3a9c,
+      type: 3}
