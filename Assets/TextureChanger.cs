@@ -1,40 +1,50 @@
 using MixedReality.Toolkit;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.Events;
+using static UnityEngine.Rendering.DebugUI.Table;
 
 public class TextureChanger: MonoBehaviour
-{
-    public Texture newTexture; // Drag and drop the new texture in the inspector
-    public Renderer rend;
- 
+{  
+    public GameObject cube;
+    public Texture[] textures;
 
-    void Start()
+    public Renderer cubeRenderer;
+    public Renderer cubeRenderer2;
+    public int randomTextureIndex;
+
+    public void Start()
     {
+        
         StatefulInteractable statefulInteractable = gameObject.AddComponent<StatefulInteractable>();
-        statefulInteractable.OnClicked.AddListener(ChangeObjectTextureOnClick);
-        if (rend == null)
-        {
-            rend = GetComponent<Renderer>();
-        }
-        if (rend == null)
-        {
-            Debug.LogError("Renderer component not found!");
-        } 
-                
+        statefulInteractable.OnClicked.AddListener(ChangeCubeTexture);
+        cubeRenderer = cube.GetComponent<Renderer>();
+        cubeRenderer2 = cube.GetComponent<Renderer>();
     }
 
-    public void ChangeObjectTextureOnClick()
+    public void ChangeCubeTexture()
     {
-        Debug.Log("Clicked");
-        if (rend != null && newTexture != null)
+        randomTextureIndex = Random.Range(0, textures.Length);
+        Debug.Log("clicked");
+        if (cubeRenderer != null && textures.Length > 0 && cubeRenderer2!=null)
         {
-            rend.material.mainTexture = newTexture;
+            cubeRenderer.material.mainTexture = textures[randomTextureIndex];
+            cubeRenderer2.material.mainTexture = textures[randomTextureIndex];
         }
         else
         {
-            Debug.LogError("Renderer or new texture is not assigned!");
+            Debug.LogError("Cube Renderer not found or textures array is empty!");
         }
     }
 }
+
+
+
+
+
+
+
+        
+
