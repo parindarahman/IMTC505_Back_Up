@@ -63,6 +63,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoyoteAnimation_02
       objectReference: {fileID: 0}
+    - target: {fileID: 4386457097018674545, guid: 7f805946f9b481c4a9a0a4fbd35494de,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -106,11 +111,4 @@ MonoBehaviour:
   textures:
   - {fileID: 2800000, guid: f866b203fe36af9449e86331b57be65a, type: 3}
   cubeRenderer: {fileID: 4537091436301741001}
-  cubeRenderer2: {fileID: 7044274845417892113}
   randomTextureIndex: 0
---- !u!137 &7044274845417892113 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2853768270042634523, guid: 7f805946f9b481c4a9a0a4fbd35494de,
-    type: 3}
-  m_PrefabInstance: {fileID: 5069036373071523850}
-  m_PrefabAsset: {fileID: 0}
