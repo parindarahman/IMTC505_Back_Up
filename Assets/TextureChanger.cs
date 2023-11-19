@@ -1,4 +1,5 @@
 using MixedReality.Toolkit;
+using MixedReality.Toolkit.UX;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,7 @@ public class TextureChanger: MonoBehaviour
     {
         
         StatefulInteractable statefulInteractable = gameObject.AddComponent<StatefulInteractable>();
+        gameObject.AddComponent<UGUIInputAdapter>();
         statefulInteractable.OnClicked.AddListener(ChangeCubeTexture);
    
         cubeRenderer = cube.GetComponent<Renderer>();

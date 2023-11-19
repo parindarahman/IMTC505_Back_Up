@@ -30,3 +30,12 @@ MonoBehaviour:
   - identifier: MuscialNote
     prefab: {fileID: 3133548096772341771, guid: 547467a3a43e5d04ab6385ef903a3a9c,
       type: 3}
+  - identifier: Roadsign
+    prefab: {fileID: 7007776039930947549, guid: 72c623a3198690c44a7879c2886ec64a,
+      type: 3}
+  - identifier: tester
+    prefab: {fileID: 8403297134694775114, guid: ebd44fffd6f4ced498c806b080ebccb7,
+      type: 3}
+  - identifier: new coyote
+    prefab: {fileID: 5375534787630681435, guid: 839b7a150c0988346a52f177f0ba550b,
+      type: 3}
